@@ -1,0 +1,10 @@
+GBAD-GUI RELEASE NOTES
+ 
+Version 3.1
+ 
+- Allows -noOpt option to be configured from GUI.
+ 
+Version 3.0
+ 
+- Allowed both GBAD-MDL and GBAD-FSM to be run from the GUI.
+- Changed input file format.
