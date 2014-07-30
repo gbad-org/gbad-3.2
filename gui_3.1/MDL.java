@@ -311,9 +311,9 @@ public class MDL extends JPanel implements ActionListener, ItemListener, Paramet
 		valuebasedCheckBox.setToolTipText(valuebasedDescription);
 		addJCheckBoxPanel(content, gridbag, valuebasedLabel, valuebasedCheckBox);
 		
-        noOptLabel = new JLabel("-noOpt");
-        noOptCheckBox = new JCheckBox("");
-        noOptLabel.setToolTipText(noOptDescription);
+                noOptLabel = new JLabel("-noOpt");
+                noOptCheckBox = new JCheckBox("");
+                noOptLabel.setToolTipText(noOptDescription);
 		noOptCheckBox.setToolTipText(noOptDescription);
 		addJCheckBoxPanel(content, gridbag, noOptLabel, noOptCheckBox);
 		
@@ -393,7 +393,7 @@ public class MDL extends JPanel implements ActionListener, ItemListener, Paramet
 		pruneCheckBox.setSelected(false);
 		undirectedCheckBox.setSelected(false);
 		valuebasedCheckBox.setSelected(false);
-        noOptCheckBox.setSelected(false);
+                noOptCheckBox.setSelected(false);
 		
 		beamTextField.setBackground(new Color(255, 255, 255));
 		iterationsTextField.setBackground(new Color(255, 255, 255));
@@ -574,7 +574,7 @@ public class MDL extends JPanel implements ActionListener, ItemListener, Paramet
 		valuebasedLabel.setVisible(!visible);
 		valuebasedCheckBox.setVisible(!visible);
         
-        noOptLabel.setVisible(!visible);
+                noOptLabel.setVisible(!visible);
 		noOptCheckBox.setVisible(!visible);
 	}
 	
@@ -811,7 +811,7 @@ public class MDL extends JPanel implements ActionListener, ItemListener, Paramet
 		appendCheckBoxParam(args, pruneCheckBox, "-prune");
 		appendCheckBoxParam(args, undirectedCheckBox, "-undirected");
 		appendCheckBoxParam(args, valuebasedCheckBox, "-valuebased");
-        appendCheckBoxParam(args, noOptCheckBox, "-noOpt");
+                appendCheckBoxParam(args, noOptCheckBox, "-noOpt");
 		
 		args.add("-dot");
 		args.add(resultsDir + inputFile.getName() + append + getAnomalyAlgorithm() + ".dot");
